@@ -1,4 +1,5 @@
 import { openAI } from "@/lib/provider/openai";
+import { SiliconFlow } from "@/lib/provider/siliconflow";
 import { togetherAI } from "@/lib/provider/together_ai";
 import { Result } from "@shared/types";
 import { anthropic } from "./anthropic";
@@ -31,6 +32,7 @@ export enum ProviderE {
   OPENAI = "openai",
   ANTHROPIC = "anthropic",
   MISTRAL = "mistral",
+  SILICONFLOW = "siliconflow",
   TOGETHER_AI = "together_ai"
 }
 export function getProvider(provider: ProviderE): Provider {
@@ -41,6 +43,8 @@ export function getProvider(provider: ProviderE): Provider {
       return anthropic;
     case ProviderE.TOGETHER_AI:
       return togetherAI;
+    case ProviderE.SILICONFLOW:
+      return SiliconFlow;
     case ProviderE.MISTRAL:
       return mistral;
     default:
@@ -64,6 +68,7 @@ export function getProvidersNameAndValue(): NameAndValue[] {
     { name: "OpenAI", value: ProviderE.OPENAI },
     { name: "Anthropic", value: ProviderE.ANTHROPIC },
     { name: "Mistral", value: ProviderE.MISTRAL },
+    { name: "SiliconFlow", value: ProviderE.SILICONFLOW },
     { name: "Together AI", value: ProviderE.TOGETHER_AI }
   ];
 }

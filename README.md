@@ -3,8 +3,7 @@
 ![image](https://github.com/cyanff/anime.gf/assets/42996044/306d1caf-d6ec-4370-92f6-2328de3a8956)
 
 anime.gf is a private & open source LLM frontend. 
-User-friendly, multi-API support (OpenAI, Anthropic, Mistral, Together AI), Configurable LLM generation settings, Customizable themes.
-Open source waifus on the desktop. Alpha Early Access v0.0.1™® 
+User-friendly, multi-API support (OpenAI, Anthropic, Mistral, SiliconFlow, Together AI), Configurable LLM generation settings, Customizable themes.Open source waifus on the desktop. Alpha Early Access v0.0.1™® 
 
 
 ## Features
@@ -16,7 +15,7 @@ Open source waifus on the desktop. Alpha Early Access v0.0.1™®
 - Chat reset, delete
 - Message rewind
 - Response regeneration
-- Support for OpenAI, Anthropic, Mistral, Together AI backends
+- Support for OpenAI, Anthropic, Mistral, SiliconFlow,Together AI backends
 - LLM generation settings
 - Jailbreak prompt
 - Customizable themes
